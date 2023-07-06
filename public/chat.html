@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ASK NEWS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/chat.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/chat-page.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="icon back-icon" onclick="goToHome()">
+        </div>
+        <div>
+            <h1 class="page-name">MEDIA LENS</h1>
+            <h3 class="sub-heading">Same News, Different Views</h3>
+        </div>
+        <div class="icon summary-icon" onclick="goToTopic()"></div>
+    </header>
+    <div class="chat-container">
+        <div class="chat-container">
+            <div id="messageContainer" class="message-container">
+                <div class="message bot-message">Hello! How can I assist you today?</div>
+                <div class="message user-message">I have a question about your products.</div>
+                <div class="message bot-message">Sure, I'll be happy to help. What would you like to know?</div>
+            </div>
+
+            <div class="input-container">
+                <form id="userInputForm">
+                    <input type="text" id="userInput" placeholder="Type your message here">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

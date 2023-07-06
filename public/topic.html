@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ASK NEWS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/topic.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/topic-page.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="icon back-icon" onclick="goToHome()">
+        </div>
+        <div>
+            <h1 class="page-name">MEDIA LENS</h1>
+            <h3 class="sub-heading">Same News, Different Views</h3>
+        </div>
+        <div class="icon chat-icon" onclick="goToChat()"></div>
+    </header>
+
+    <div class="topic-summary-container">
+        <p class="section-heading"><b>Topic</b></p>
+        <div class="topic-section">
+            <button class="topic-button" onclick="showNewsSummary('Topic 1')">Differences in opinion</button>
+            <button class="topic-button" onclick="showNewsSummary('Topic 2')">Similarities</button>
+            <button class="topic-button" onclick="showNewsSummary('Topic 3')">Political Spectrum</button>
+            <button class="topic-button" onclick="showNewsSummary('Topic 4')">Leadership Style</button>
+            <button class="topic-button" onclick="showNewsSummary('Topic 5')">Earthquake</button>
+            <button class="topic-button" onclick="showNewsSummary('Topic 6')">Difference in style of campaign</button>
+            <button class="topic-button" onclick="showNewsSummary('Topic 7')">Economic downfall as an issue</button>
+        </div>
+        <p class="section-heading"><b>Summary</b></p>
+        <div class="news-summary-section">
+            <div id="newsSummary">
+                <p id="placeholderText">Select a topic to see the news summary</p>
+            </div>
+        </div>
+    </div>
+</body>
