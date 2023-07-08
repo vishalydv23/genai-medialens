@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>ASK NEWS</title>
+    <title>MEDIA LENS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="/css/chat.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -16,24 +16,50 @@
         <div class="icon back-icon" onclick="goToHome()">
         </div>
         <div>
-            <h1 class="page-name">MEDIA LENS</h1>
-            <h3 class="sub-heading">Same News, Different Views</h3>
+            <div class="main-logo"></div>
+            <p class="sub-heading">Same News, Different Views</p>
         </div>
         <div class="icon summary-icon" onclick="goToTopic()"></div>
     </header>
     <div class="chat-container">
         <div class="chat-container">
             <div id="messageContainer" class="message-container">
-                <div class="message bot-message">Hello! How can I assist you today?</div>
-                <div class="message user-message">I have a question about your products.</div>
-                <div class="message bot-message">Sure, I'll be happy to help. What would you like to know?</div>
+                <div class="message bot-message">Tell me about the Erdogan opposition</div>
+                <div class="message user-message">The main opposition to Erdogan is the Republican People's Party (CHP),
+                    led by Kemal Kilicdaroglu. The CHP is a centre-left party that has been the main opposition party in
+                    Turkey since its founding in 1923. The CHP has been critical of Erdogan's authoritarian rule and his
+                    economic policies.
+
+                    Another opposition party is the Good Party (IYI Parti), led by Meral Aksener. The IYI Parti is a
+                    centre-right party that was founded in 2017 by former members of the AKP. The IYI Parti has been
+                    critical of Erdogan's policies and has called for a more democratic and secular Turkey.
+
+                    The opposition parties have been united in their opposition to Erdogan, but they have not always
+                    been able to work together effectively. In the 2023 Turkish general election, the opposition parties
+                    coalesced around a single candidate, Kemal Kilicdaroglu, but they were unable to defeat Erdogan in
+                    the first round of voting. The opposition parties will now face a runoff election on May 28th.
+                </div>
+                <div class="message bot-message">what is the reason of decline in popularity of Erdogan?</div>
+                <div class="message user-message">According to the podcasts, Erdogan's popularity has been declining in
+                    recent years due to high inflation and an economic crisis. He has also been accused of authoritarian
+                    rule and cracking down on dissent.
+                </div>
+                <div class="message bot-message">Tell me about the leadership style of Erdogan</div>
+                <div class="message user-message">Recep Tayyip Erdogan has been the president of Turkey since 2003. He
+                    is a controversial figure who has been accused of authoritarian rule, but he remains popular with
+                    many Turks.
+                    Erdogan has been in power for 20 years, and he has used that time to consolidate his power. He has
+                    cracked down on dissent, restricted freedom of speech and the press, and increased his control over
+                    the media. He has also been accused of corruption.
+                    Despite the challenges he faces, Erdogan remains popular with many Turks. He is seen as a strong
+                    leader who is willing to stand up for Turkey's interests. He has also been successful in improving
+                    the economy.
+                </div>
             </div>
 
             <div class="input-container">
-                <form id="userInputForm">
-                    <input type="text" id="userInput" placeholder="Type your message here">
-                    <button type="submit">Send</button>
-                </form>
+                <input type="text" id="userInput" class="chatInputMessage" placeholder="Type your message here">
+                <button type="button" onclick="sendMessage()">Send</button>
             </div>
         </div>
     </div>
